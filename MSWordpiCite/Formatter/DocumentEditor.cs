@@ -330,9 +330,10 @@ namespace MSWordpiCite.Formatter
                         selection.SetRange(link.Range.End, link.Range.End);
                     }
 
-                    //須加入判斷Office版本資訊，因insertxml function在2007,2010,2013版本會有\r動作
+                    //須加入判斷Office版本資訊，因insertxml function在2007,2010,2013版本會有\r動作。
                     r1.MoveUntil("\r");
                     r1.Delete(1, 1);
+                    System.Diagnostics.Debug.WriteLine("Hello");
 
                     document.ActiveWindow.SetFocus();
                 }
