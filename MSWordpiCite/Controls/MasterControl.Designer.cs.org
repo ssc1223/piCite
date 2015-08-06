@@ -1,0 +1,670 @@
+﻿namespace MSWordWizCite.Controls
+{
+    using MSWordWizCite.Classes;
+    partial class MasterControl
+    {
+
+        /// <summary> 
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary> 
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Component Designer generated code
+
+        /// <summary> 
+        /// Required method for Designer support - do not modify 
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.components = new System.ComponentModel.Container();
+            this.listIcons = new System.Windows.Forms.ImageList(this.components);
+            this.ctrlPreview = new MSWordWizCite.Controls.PreviewControl();
+            this.splitParent = new System.Windows.Forms.SplitContainer();
+            this.tableTop = new System.Windows.Forms.TableLayoutPanel();
+            this.lblCurrentUserName = new System.Windows.Forms.Label();
+            this.btnReload = new MSWordWizCite.Classes.CustomButton();
+            this.btnLogout = new MSWordWizCite.Classes.CustomButton();
+            this.treeFolders = new System.Windows.Forms.TreeView();
+            this.splitChild = new System.Windows.Forms.SplitContainer();
+            this.tableMiddle = new System.Windows.Forms.TableLayoutPanel();
+            this.flowPanel = new System.Windows.Forms.FlowLayoutPanel();
+            this.btnCite = new MSWordWizCite.Classes.CustomButton();
+            this.btnStyle = new MSWordWizCite.Classes.CustomButton();
+            this.btnRefresh = new MSWordWizCite.Classes.CustomButton();
+            this.btnRefList = new MSWordWizCite.Classes.CustomButton();
+            this.btnHighlight = new MSWordWizCite.Classes.CustomButton();
+            this.lblDownloading = new System.Windows.Forms.Label();
+            this.btnPreview = new MSWordWizCite.Classes.CustomButton();
+            this.btnDisplay = new MSWordWizCite.Classes.CustomButton();
+            this.listItems = new BrightIdeasSoftware.ObjectListView();
+            this.olvColumnDisplay = new BrightIdeasSoftware.OLVColumn();
+            this.olvColumnImage = new BrightIdeasSoftware.OLVColumn();
+            this.olvColumnItemFile = new BrightIdeasSoftware.OLVColumn();
+            this.contextmenu = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.menuitemSortBy = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuitemFilterFields = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuitemShowHidePreview = new System.Windows.Forms.ToolStripMenuItem();
+            this.inputSearch = new System.Windows.Forms.TextBox();
+            this.btnSearch = new MSWordWizCite.Classes.CustomButton();
+            this.tableBottom = new System.Windows.Forms.TableLayoutPanel();
+            this.filterContextMenu = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.cmbViews = new MSWordWizCite.Classes.CustomComboBoxControl();
+            this.cmbSortBy = new MSWordWizCite.Classes.CustomComboBoxControl();
+            this.lblSortBy = new System.Windows.Forms.Label();
+            this.tooltip = new System.Windows.Forms.ToolTip(this.components);
+            this.lblLoadingFolders = new System.Windows.Forms.Label();
+            this.lblLoadingItems = new System.Windows.Forms.Label();
+            this.flowLoadingFolders = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLoadingItems = new System.Windows.Forms.FlowLayoutPanel();
+            this.splitParent.Panel1.SuspendLayout();
+            this.splitParent.Panel2.SuspendLayout();
+            this.splitParent.SuspendLayout();
+            this.tableTop.SuspendLayout();
+            this.splitChild.Panel1.SuspendLayout();
+            this.splitChild.Panel2.SuspendLayout();
+            this.splitChild.SuspendLayout();
+            this.tableMiddle.SuspendLayout();
+            this.flowPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.listItems)).BeginInit();
+            this.contextmenu.SuspendLayout();
+            this.tableBottom.SuspendLayout();
+            this.flowLoadingFolders.SuspendLayout();
+            this.flowLoadingItems.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // listIcons
+            // 
+            this.listIcons.ColorDepth = System.Windows.Forms.ColorDepth.Depth32Bit;
+            this.listIcons.ImageSize = new System.Drawing.Size(16, 16);
+            this.listIcons.TransparentColor = System.Drawing.Color.Transparent;
+            // 
+            // ctrlPreview
+            // 
+            this.ctrlPreview.AutoScroll = true;
+            this.ctrlPreview.AutoSize = true;
+            this.ctrlPreview.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.ctrlPreview.BackColor = System.Drawing.SystemColors.Window;
+            this.ctrlPreview.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ctrlPreview.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ctrlPreview.Location = new System.Drawing.Point(3, 3);
+            this.ctrlPreview.Name = "ctrlPreview";
+            this.ctrlPreview.Size = new System.Drawing.Size(0, 219);
+            this.ctrlPreview.TabIndex = 6;
+            this.ctrlPreview.TabStop = false;
+            // 
+            // splitParent
+            // 
+            this.splitParent.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitParent.Location = new System.Drawing.Point(0, 0);
+            this.splitParent.Name = "splitParent";
+            this.splitParent.Orientation = System.Windows.Forms.Orientation.Horizontal;
+            // 
+            // splitParent.Panel1
+            // 
+            this.splitParent.Panel1.Controls.Add(this.tableTop);
+            // 
+            // splitParent.Panel2
+            // 
+            this.splitParent.Panel2.Controls.Add(this.splitChild);
+            this.splitParent.Size = new System.Drawing.Size(0, 0);
+            this.splitParent.SplitterDistance = 25;
+            this.splitParent.TabIndex = 0;
+            this.splitParent.TabStop = false;
+            // 
+            // tableTop
+            // 
+            this.tableTop.AutoSize = true;
+            this.tableTop.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.tableTop.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableTop.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 30F));
+            this.tableTop.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 30F));
+            this.tableTop.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 30F));
+            this.tableTop.Controls.Add(this.lblCurrentUserName, 0, 0);
+            this.tableTop.Controls.Add(this.btnReload, 2, 0);
+            this.tableTop.Controls.Add(this.btnLogout, 3, 0);
+            this.tableTop.Controls.Add(this.treeFolders, 0, 1);
+            this.tableTop.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableTop.Location = new System.Drawing.Point(0, 0);
+            this.tableTop.Name = "tableTop";
+            this.tableTop.RowCount = 2;
+            this.tableTop.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
+            this.tableTop.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableTop.Size = new System.Drawing.Size(0, 25);
+            this.tableTop.TabIndex = 0;
+            // 
+            // lblCurrentUserName
+            // 
+            this.lblCurrentUserName.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.lblCurrentUserName.AutoSize = true;
+            this.lblCurrentUserName.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lblCurrentUserName.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCurrentUserName.Location = new System.Drawing.Point(3, 8);
+            this.lblCurrentUserName.Name = "lblCurrentUserName";
+            this.lblCurrentUserName.Size = new System.Drawing.Size(1, 13);
+            this.lblCurrentUserName.TabIndex = 0;
+            this.lblCurrentUserName.Text = "First Last";
+            // 
+            // btnReload
+            // 
+            this.btnReload.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.btnReload.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(170)))), ((int)(((byte)(115)))));
+            this.btnReload.FlatAppearance.BorderSize = 0;
+            this.btnReload.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(216)))), ((int)(((byte)(188)))));
+            this.btnReload.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(216)))), ((int)(((byte)(188)))));
+            this.btnReload.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(225)))), ((int)(((byte)(205)))));
+            this.btnReload.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnReload.Image = global::MSWordWizCite.Properties.Resources.transfer;
+            this.btnReload.Location = new System.Drawing.Point(-56, 3);
+            this.btnReload.Name = "btnReload";
+            this.btnReload.Size = new System.Drawing.Size(24, 24);
+            this.btnReload.TabIndex = 2;
+            this.btnReload.TabStop = false;
+            this.btnReload.Click += new System.EventHandler(this.btnReload_Clicked);
+            // 
+            // btnLogout
+            // 
+            this.btnLogout.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.btnLogout.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(170)))), ((int)(((byte)(115)))));
+            this.btnLogout.FlatAppearance.BorderSize = 0;
+            this.btnLogout.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(216)))), ((int)(((byte)(188)))));
+            this.btnLogout.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(216)))), ((int)(((byte)(188)))));
+            this.btnLogout.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(225)))), ((int)(((byte)(205)))));
+            this.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLogout.Image = global::MSWordWizCite.Properties.Resources.logout;
+            this.btnLogout.Location = new System.Drawing.Point(-26, 3);
+            this.btnLogout.Name = "btnLogout";
+            this.btnLogout.Size = new System.Drawing.Size(24, 24);
+            this.btnLogout.TabIndex = 3;
+            this.btnLogout.TabStop = false;
+            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Clicked);
+            // 
+            // treeFolders
+            // 
+            this.treeFolders.BackColor = System.Drawing.SystemColors.Window;
+            this.treeFolders.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tableTop.SetColumnSpan(this.treeFolders, 4);
+            this.treeFolders.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.treeFolders.HideSelection = false;
+            this.treeFolders.Location = new System.Drawing.Point(3, 33);
+            this.treeFolders.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
+            this.treeFolders.Name = "treeFolders";
+            this.treeFolders.ShowLines = false;
+            this.treeFolders.Size = new System.Drawing.Size(1, 1);
+            this.treeFolders.TabIndex = 4;
+            this.treeFolders.TabStop = false;
+            this.treeFolders.KeyUp += new System.Windows.Forms.KeyEventHandler(this.treeFolders_KeyUp);
+            // 
+            // splitChild
+            // 
+            this.splitChild.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitChild.Location = new System.Drawing.Point(0, 0);
+            this.splitChild.Name = "splitChild";
+            this.splitChild.Orientation = System.Windows.Forms.Orientation.Horizontal;
+            // 
+            // splitChild.Panel1
+            // 
+            this.splitChild.Panel1.Controls.Add(this.tableMiddle);
+            // 
+            // splitChild.Panel2
+            // 
+            this.splitChild.Panel2.Controls.Add(this.tableBottom);
+            this.splitChild.Size = new System.Drawing.Size(0, 25);
+            this.splitChild.SplitterDistance = 197;
+            this.splitChild.TabIndex = 0;
+            this.splitChild.TabStop = false;
+            // 
+            // tableMiddle
+            // 
+            this.tableMiddle.AutoSize = true;
+            this.tableMiddle.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.tableMiddle.ColumnCount = 3;
+            this.tableMiddle.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableMiddle.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 30F));
+            this.tableMiddle.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 36F));
+            this.tableMiddle.Controls.Add(this.flowPanel, 0, 0);
+            this.tableMiddle.Controls.Add(this.btnPreview, 1, 0);
+            this.tableMiddle.Controls.Add(this.btnDisplay, 2, 0);
+            this.tableMiddle.Controls.Add(this.listItems, 0, 1);
+            this.tableMiddle.Controls.Add(this.inputSearch, 0, 2);
+            this.tableMiddle.Controls.Add(this.btnSearch, 2, 2);
+            this.tableMiddle.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableMiddle.Location = new System.Drawing.Point(0, 0);
+            this.tableMiddle.Name = "tableMiddle";
+            this.tableMiddle.RowCount = 3;
+            this.tableMiddle.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
+            this.tableMiddle.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableMiddle.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 24F));
+            this.tableMiddle.Size = new System.Drawing.Size(0, 197);
+            this.tableMiddle.TabIndex = 0;
+            this.tableMiddle.TabStop = true;
+            // 
+            // flowPanel
+            // 
+            this.flowPanel.AutoSize = true;
+            this.flowPanel.Controls.Add(this.btnCite);
+            this.flowPanel.Controls.Add(this.btnStyle);
+            this.flowPanel.Controls.Add(this.btnRefresh);
+            this.flowPanel.Controls.Add(this.btnRefList);
+            this.flowPanel.Controls.Add(this.btnHighlight);
+            this.flowPanel.Controls.Add(this.lblDownloading);
+            this.flowPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flowPanel.Location = new System.Drawing.Point(0, 0);
+            this.flowPanel.Margin = new System.Windows.Forms.Padding(0);
+            this.flowPanel.Name = "flowPanel";
+            this.flowPanel.Size = new System.Drawing.Size(1, 30);
+            this.flowPanel.TabIndex = 5;
+            // 
+            // btnCite
+            // 
+            this.btnCite.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(170)))), ((int)(((byte)(115)))));
+            this.btnCite.FlatAppearance.BorderSize = 0;
+            this.btnCite.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(216)))), ((int)(((byte)(188)))));
+            this.btnCite.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(216)))), ((int)(((byte)(188)))));
+            this.btnCite.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(225)))), ((int)(((byte)(205)))));
+            this.btnCite.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCite.Image = global::MSWordWizCite.Properties.Resources.CitationInsert;
+            this.btnCite.Location = new System.Drawing.Point(3, 3);
+            this.btnCite.Name = "btnCite";
+            this.btnCite.Size = new System.Drawing.Size(24, 24);
+            this.btnCite.TabIndex = 0;
+            this.btnCite.TabStop = false;
+            // 
+            // btnStyle
+            // 
+            this.btnStyle.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(170)))), ((int)(((byte)(115)))));
+            this.btnStyle.FlatAppearance.BorderSize = 0;
+            this.btnStyle.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(216)))), ((int)(((byte)(188)))));
+            this.btnStyle.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(216)))), ((int)(((byte)(188)))));
+            this.btnStyle.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(225)))), ((int)(((byte)(205)))));
+            this.btnStyle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnStyle.Image = global::MSWordWizCite.Properties.Resources.CitationStyleChange;
+            this.btnStyle.Location = new System.Drawing.Point(3, 33);
+            this.btnStyle.Name = "btnStyle";
+            this.btnStyle.Size = new System.Drawing.Size(24, 24);
+            this.btnStyle.TabIndex = 1;
+            this.btnStyle.TabStop = false;
+            this.btnStyle.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // btnRefresh
+            // 
+            this.btnRefresh.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(170)))), ((int)(((byte)(115)))));
+            this.btnRefresh.FlatAppearance.BorderSize = 0;
+            this.btnRefresh.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(216)))), ((int)(((byte)(188)))));
+            this.btnRefresh.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(216)))), ((int)(((byte)(188)))));
+            this.btnRefresh.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(225)))), ((int)(((byte)(205)))));
+            this.btnRefresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRefresh.Image = global::MSWordWizCite.Properties.Resources.FolderRefresh2;
+            this.btnRefresh.Location = new System.Drawing.Point(3, 63);
+            this.btnRefresh.Name = "btnRefresh";
+            this.btnRefresh.Size = new System.Drawing.Size(24, 24);
+            this.btnRefresh.TabIndex = 2;
+            this.btnRefresh.TabStop = false;
+            // 
+            // btnRefList
+            // 
+            this.btnRefList.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(170)))), ((int)(((byte)(115)))));
+            this.btnRefList.FlatAppearance.BorderSize = 0;
+            this.btnRefList.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(216)))), ((int)(((byte)(188)))));
+            this.btnRefList.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(216)))), ((int)(((byte)(188)))));
+            this.btnRefList.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(225)))), ((int)(((byte)(205)))));
+            this.btnRefList.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRefList.Image = global::MSWordWizCite.Properties.Resources.ReferenceLocate;
+            this.btnRefList.Location = new System.Drawing.Point(3, 93);
+            this.btnRefList.Name = "btnRefList";
+            this.btnRefList.Size = new System.Drawing.Size(24, 24);
+            this.btnRefList.TabIndex = 4;
+            this.btnRefList.TabStop = false;
+            // 
+            // btnHighlight
+            // 
+            this.btnHighlight.Enabled = false;
+            this.btnHighlight.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(170)))), ((int)(((byte)(115)))));
+            this.btnHighlight.FlatAppearance.BorderSize = 0;
+            this.btnHighlight.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(216)))), ((int)(((byte)(188)))));
+            this.btnHighlight.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(216)))), ((int)(((byte)(188)))));
+            this.btnHighlight.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(225)))), ((int)(((byte)(205)))));
+            this.btnHighlight.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHighlight.Image = global::MSWordWizCite.Properties.Resources.Highlight;
+            this.btnHighlight.Location = new System.Drawing.Point(3, 123);
+            this.btnHighlight.Name = "btnHighlight";
+            this.btnHighlight.Size = new System.Drawing.Size(24, 24);
+            this.btnHighlight.TabIndex = 3;
+            this.btnHighlight.TabStop = false;
+            this.btnHighlight.Visible = false;
+            // 
+            // lblDownloading
+            // 
+            this.lblDownloading.AutoSize = true;
+            this.lblDownloading.Location = new System.Drawing.Point(3, 150);
+            this.lblDownloading.Name = "lblDownloading";
+            this.lblDownloading.Padding = new System.Windows.Forms.Padding(0, 10, 0, 0);
+            this.lblDownloading.Size = new System.Drawing.Size(84, 23);
+            this.lblDownloading.TabIndex = 5;
+            this.lblDownloading.Text = "Downloading ... ";
+            this.lblDownloading.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblDownloading.Visible = false;
+            // 
+            // btnPreview
+            // 
+            this.btnPreview.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.btnPreview.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnPreview.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(170)))), ((int)(((byte)(115)))));
+            this.btnPreview.FlatAppearance.BorderSize = 0;
+            this.btnPreview.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(216)))), ((int)(((byte)(188)))));
+            this.btnPreview.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(216)))), ((int)(((byte)(188)))));
+            this.btnPreview.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(225)))), ((int)(((byte)(205)))));
+            this.btnPreview.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPreview.Image = global::MSWordWizCite.Properties.Resources.preview;
+            this.btnPreview.Location = new System.Drawing.Point(-62, 3);
+            this.btnPreview.Margin = new System.Windows.Forms.Padding(0, 0, 3, 0);
+            this.btnPreview.Name = "btnPreview";
+            this.btnPreview.Size = new System.Drawing.Size(24, 24);
+            this.btnPreview.TabIndex = 6;
+            this.btnPreview.TabStop = false;
+            this.btnPreview.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // btnDisplay
+            // 
+            this.btnDisplay.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.btnDisplay.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnDisplay.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(170)))), ((int)(((byte)(115)))));
+            this.btnDisplay.FlatAppearance.BorderSize = 0;
+            this.btnDisplay.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(216)))), ((int)(((byte)(188)))));
+            this.btnDisplay.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(216)))), ((int)(((byte)(188)))));
+            this.btnDisplay.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(225)))), ((int)(((byte)(205)))));
+            this.btnDisplay.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDisplay.Image = global::MSWordWizCite.Properties.Resources.DisplayIcon;
+            this.btnDisplay.Location = new System.Drawing.Point(-26, 3);
+            this.btnDisplay.Margin = new System.Windows.Forms.Padding(0, 0, 3, 0);
+            this.btnDisplay.Name = "btnDisplay";
+            this.btnDisplay.Size = new System.Drawing.Size(24, 24);
+            this.btnDisplay.TabIndex = 6;
+            this.btnDisplay.TabStop = false;
+            this.btnDisplay.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnDisplay.Click += new System.EventHandler(this.btnDisplay_Click);
+            // 
+            // listItems
+            // 
+            this.listItems.AllColumns.Add(this.olvColumnDisplay);
+            this.listItems.AllColumns.Add(this.olvColumnImage);
+            this.listItems.AllColumns.Add(this.olvColumnItemFile);
+            this.listItems.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.listItems.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.olvColumnImage,
+            this.olvColumnDisplay,
+            this.olvColumnItemFile});
+            this.tableMiddle.SetColumnSpan(this.listItems, 3);
+            this.listItems.ContextMenuStrip = this.contextmenu;
+            this.listItems.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.listItems.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
+            this.listItems.FullRowSelect = true;
+            this.listItems.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.None;
+            this.listItems.HideSelection = false;
+            this.listItems.Location = new System.Drawing.Point(3, 33);
+            this.listItems.Name = "listItems";
+            this.listItems.OwnerDraw = true;
+            this.listItems.RowHeight = 45;
+            this.listItems.ShowGroups = false;
+            this.listItems.Size = new System.Drawing.Size(1, 137);
+            this.listItems.SmallImageList = this.listIcons;
+            this.listItems.TabIndex = 0;
+            this.listItems.UseCellFormatEvents = true;
+            this.listItems.UseCompatibleStateImageBehavior = false;
+            this.listItems.UseTranslucentSelection = true;
+            this.listItems.View = System.Windows.Forms.View.Details;
+            // 
+            // olvColumnDisplay
+            // 
+            this.olvColumnDisplay.AspectName = "Display";
+            this.olvColumnDisplay.FillsFreeSpace = true;
+            this.olvColumnDisplay.Text = "Display";
+            // 
+            // olvColumnImage
+            // 
+            this.olvColumnImage.Text = "Image";
+            this.olvColumnImage.Width = 25;
+            // 
+            // olvColumnItemFile
+            // 
+            this.olvColumnItemFile.Text = "ItemFile";
+            this.olvColumnItemFile.Width = 25;
+            // 
+            // contextmenu
+            // 
+            this.contextmenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.menuitemSortBy,
+            this.menuitemFilterFields,
+            this.menuitemShowHidePreview});
+            this.contextmenu.Name = "contextmenu";
+            this.contextmenu.Size = new System.Drawing.Size(190, 70);
+            // 
+            // menuitemSortBy
+            // 
+            this.menuitemSortBy.Name = "menuitemSortBy";
+            this.menuitemSortBy.Size = new System.Drawing.Size(189, 22);
+            this.menuitemSortBy.Text = "Sort";
+            // 
+            // menuitemFilterFields
+            // 
+            this.menuitemFilterFields.Name = "menuitemFilterFields";
+            this.menuitemFilterFields.Size = new System.Drawing.Size(189, 22);
+            this.menuitemFilterFields.Text = "Filter options";
+            // 
+            // menuitemShowHidePreview
+            // 
+            this.menuitemShowHidePreview.Name = "menuitemShowHidePreview";
+            this.menuitemShowHidePreview.Size = new System.Drawing.Size(189, 22);
+            this.menuitemShowHidePreview.Text = "Show/Hide item preview";
+            // 
+            // inputSearch
+            // 
+            this.inputSearch.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tableMiddle.SetColumnSpan(this.inputSearch, 2);
+            this.inputSearch.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.inputSearch.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.inputSearch.Location = new System.Drawing.Point(3, 173);
+            this.inputSearch.Margin = new System.Windows.Forms.Padding(3, 0, 3, 0);
+            this.inputSearch.Name = "inputSearch";
+            this.inputSearch.Size = new System.Drawing.Size(1, 20);
+            this.inputSearch.TabIndex = 1;
+            this.inputSearch.Text = "Find items ...";
+            // 
+            // btnSearch
+            // 
+            this.btnSearch.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(170)))), ((int)(((byte)(115)))));
+            this.btnSearch.FlatAppearance.BorderSize = 0;
+            this.btnSearch.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(216)))), ((int)(((byte)(188)))));
+            this.btnSearch.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(216)))), ((int)(((byte)(188)))));
+            this.btnSearch.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(225)))), ((int)(((byte)(205)))));
+            this.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSearch.Image = global::MSWordWizCite.Properties.Resources.search;
+            this.btnSearch.Location = new System.Drawing.Point(-32, 173);
+            this.btnSearch.Margin = new System.Windows.Forms.Padding(3, 0, 3, 3);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(27, 21);
+            this.btnSearch.TabIndex = 4;
+            this.btnSearch.TabStop = false;
+            // 
+            // tableBottom
+            // 
+            this.tableBottom.AutoSize = true;
+            this.tableBottom.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.tableBottom.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.tableBottom.Controls.Add(this.ctrlPreview, 0, 0);
+            this.tableBottom.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableBottom.Location = new System.Drawing.Point(0, 0);
+            this.tableBottom.Name = "tableBottom";
+            this.tableBottom.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableBottom.Size = new System.Drawing.Size(0, 225);
+            this.tableBottom.TabIndex = 0;
+            // 
+            // filterContextMenu
+            // 
+            this.filterContextMenu.Name = "filterContextMenu";
+            this.filterContextMenu.Size = new System.Drawing.Size(61, 4);
+            // 
+            // cmbViews
+            // 
+            this.cmbViews.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbViews.IntegralHeight = false;
+            this.cmbViews.Location = new System.Drawing.Point(-67, 3);
+            this.cmbViews.MaximumSize = new System.Drawing.Size(80, 0);
+            this.cmbViews.MinimumSize = new System.Drawing.Size(65, 0);
+            this.cmbViews.Name = "cmbViews";
+            this.cmbViews.Size = new System.Drawing.Size(65, 21);
+            this.cmbViews.TabIndex = 3;
+            this.cmbViews.TabStop = false;
+            // 
+            // cmbSortBy
+            // 
+            this.cmbSortBy.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbSortBy.IntegralHeight = false;
+            this.cmbSortBy.Location = new System.Drawing.Point(-59, 43);
+            this.cmbSortBy.Margin = new System.Windows.Forms.Padding(0, 3, 0, 3);
+            this.cmbSortBy.MaximumSize = new System.Drawing.Size(75, 0);
+            this.cmbSortBy.MinimumSize = new System.Drawing.Size(60, 0);
+            this.cmbSortBy.Name = "cmbSortBy";
+            this.cmbSortBy.Size = new System.Drawing.Size(60, 21);
+            this.cmbSortBy.TabIndex = 2;
+            this.cmbSortBy.TabStop = false;
+            // 
+            // lblSortBy
+            // 
+            this.lblSortBy.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.lblSortBy.AutoSize = true;
+            this.lblSortBy.Location = new System.Drawing.Point(-25, 67);
+            this.lblSortBy.Margin = new System.Windows.Forms.Padding(0);
+            this.lblSortBy.Name = "lblSortBy";
+            this.lblSortBy.Size = new System.Drawing.Size(26, 13);
+            this.lblSortBy.TabIndex = 0;
+            this.lblSortBy.Text = "Sort";
+            this.lblSortBy.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblLoadingFolders
+            // 
+            this.lblLoadingFolders.AutoSize = true;
+            this.lblLoadingFolders.Location = new System.Drawing.Point(3, 0);
+            this.lblLoadingFolders.Name = "lblLoadingFolders";
+            this.lblLoadingFolders.Size = new System.Drawing.Size(94, 13);
+            this.lblLoadingFolders.TabIndex = 0;
+            this.lblLoadingFolders.Text = "Loading folders ... ";
+            this.lblLoadingFolders.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblLoadingItems
+            // 
+            this.lblLoadingItems.Location = new System.Drawing.Point(3, 0);
+            this.lblLoadingItems.Name = "lblLoadingItems";
+            this.lblLoadingItems.Size = new System.Drawing.Size(160, 23);
+            this.lblLoadingItems.TabIndex = 0;
+            // 
+            // flowLoadingFolders
+            // 
+            this.flowLoadingFolders.BackColor = System.Drawing.Color.White;
+            this.flowLoadingFolders.Controls.Add(this.lblLoadingFolders);
+            this.flowLoadingFolders.Location = new System.Drawing.Point(0, 0);
+            this.flowLoadingFolders.Name = "flowLoadingFolders";
+            this.flowLoadingFolders.Size = new System.Drawing.Size(200, 100);
+            this.flowLoadingFolders.TabIndex = 0;
+            // 
+            // flowLoadingItems
+            // 
+            this.flowLoadingItems.BackColor = System.Drawing.Color.White;
+            this.flowLoadingItems.Controls.Add(this.lblLoadingItems);
+            this.flowLoadingItems.Location = new System.Drawing.Point(0, 0);
+            this.flowLoadingItems.Name = "flowLoadingItems";
+            this.flowLoadingItems.Size = new System.Drawing.Size(200, 100);
+            this.flowLoadingItems.TabIndex = 0;
+            // 
+            // MasterControl
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.Controls.Add(this.splitParent);
+            this.Name = "MasterControl";
+            this.Size = new System.Drawing.Size(0, 0);
+            this.Load += new System.EventHandler(this.MasterControl_Load);
+            this.splitParent.Panel1.ResumeLayout(false);
+            this.splitParent.Panel1.PerformLayout();
+            this.splitParent.Panel2.ResumeLayout(false);
+            this.splitParent.ResumeLayout(false);
+            this.tableTop.ResumeLayout(false);
+            this.tableTop.PerformLayout();
+            this.splitChild.Panel1.ResumeLayout(false);
+            this.splitChild.Panel1.PerformLayout();
+            this.splitChild.Panel2.ResumeLayout(false);
+            this.splitChild.Panel2.PerformLayout();
+            this.splitChild.ResumeLayout(false);
+            this.tableMiddle.ResumeLayout(false);
+            this.tableMiddle.PerformLayout();
+            this.flowPanel.ResumeLayout(false);
+            this.flowPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.listItems)).EndInit();
+            this.contextmenu.ResumeLayout(false);
+            this.tableBottom.ResumeLayout(false);
+            this.tableBottom.PerformLayout();
+            this.flowLoadingFolders.ResumeLayout(false);
+            this.flowLoadingFolders.PerformLayout();
+            this.flowLoadingItems.ResumeLayout(false);
+            this.ResumeLayout(false);
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.TextBox inputSearch;        
+        private BrightIdeasSoftware.ObjectListView listItems;
+        private BrightIdeasSoftware.OLVColumn olvColumnImage;
+        private BrightIdeasSoftware.OLVColumn olvColumnDisplay;
+        private BrightIdeasSoftware.OLVColumn olvColumnItemFile;
+        private System.Windows.Forms.TableLayoutPanel tableTop;
+        private System.Windows.Forms.TableLayoutPanel tableMiddle;
+        private System.Windows.Forms.TableLayoutPanel tableBottom;
+        private System.Windows.Forms.TreeView treeFolders;
+        private System.Windows.Forms.ImageList listIcons;
+        private System.Windows.Forms.Label lblCurrentUserName;
+        private MSWordWizCite.Classes.CustomButton btnSearch;
+        private MSWordWizCite.Classes.CustomButton btnLogout;
+        private MSWordWizCite.Classes.CustomButton btnReload;
+        private MSWordWizCite.Classes.CustomButton btnCite;
+        private MSWordWizCite.Classes.CustomButton btnStyle;
+        private MSWordWizCite.Classes.CustomButton btnRefresh;
+        private MSWordWizCite.Classes.CustomButton btnRefList;
+        private MSWordWizCite.Classes.CustomButton btnHighlight;
+        private MSWordWizCite.Classes.CustomButton btnDisplay;
+        private MSWordWizCite.Classes.CustomButton btnPreview;
+        private System.Windows.Forms.ToolTip tooltip;
+        private System.Windows.Forms.Label lblSortBy;
+        private System.Windows.Forms.Label lblLoadingFolders;
+        private System.Windows.Forms.Label lblLoadingItems;
+        private System.Windows.Forms.Label lblDownloading;
+        private System.Windows.Forms.FlowLayoutPanel flowLoadingFolders;
+        private System.Windows.Forms.FlowLayoutPanel flowLoadingItems;
+        private MSWordWizCite.Classes.CustomComboBoxControl cmbSortBy;
+        private MSWordWizCite.Classes.CustomComboBoxControl cmbViews;
+        private MSWordWizCite.Controls.PreviewControl ctrlPreview;
+        private System.Windows.Forms.FlowLayoutPanel flowPanel;
+        private System.Windows.Forms.SplitContainer splitParent;
+        private System.Windows.Forms.SplitContainer splitChild;
+        private System.Windows.Forms.ContextMenuStrip contextmenu;
+        private System.Windows.Forms.ContextMenuStrip filterContextMenu;
+        private System.Windows.Forms.ToolStripMenuItem menuitemSortBy;
+        private System.Windows.Forms.ToolStripMenuItem menuitemFilterFields;
+        private System.Windows.Forms.ToolStripMenuItem menuitemShowHidePreview;
+    }
+}

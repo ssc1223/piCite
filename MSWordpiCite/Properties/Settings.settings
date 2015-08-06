@@ -1,0 +1,291 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="MSWordpiCite.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="URI_REGISTER" Type="System.String" Scope="User">
+      <Value Profile="(Default)">school/Registration.aspx</Value>
+    </Setting>
+    <Setting Name="URI_FORGOTPASSWORD" Type="System.String" Scope="User">
+      <Value Profile="(Default)">school/ResetPassword.aspx</Value>
+    </Setting>
+    <Setting Name="INPUTEMAIL_WIDTH_DEFAULT" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">250</Value>
+    </Setting>
+    <Setting Name="INPUTPASSWORD_WIDTH_DEFAULT" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">250</Value>
+    </Setting>
+    <Setting Name="USERAGENT" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Microsoft Word (Windows)</Value>
+    </Setting>
+    <Setting Name="PROXY_SETTING" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="URI_LOCALDATASERVICE" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Handlers/SyncDataHandler.ashx</Value>
+    </Setting>
+    <Setting Name="IMAGEKEY_NORMALFOLDER" Type="System.String" Scope="User">
+      <Value Profile="(Default)">NormalFolder</Value>
+    </Setting>
+    <Setting Name="IMAGEKEY_PUBLICATIONFOLDER" Type="System.String" Scope="User">
+      <Value Profile="(Default)">PublicationFolder</Value>
+    </Setting>
+    <Setting Name="IMAGEKEY_SHAREDCOLLECTION" Type="System.String" Scope="User">
+      <Value Profile="(Default)">SharedCollectionFolder</Value>
+    </Setting>
+    <Setting Name="IMAGEKEY_ALLITEMS" Type="System.String" Scope="User">
+      <Value Profile="(Default)">AllItems</Value>
+    </Setting>
+    <Setting Name="IMAGEKEY_RECYCLEBIN" Type="System.String" Scope="User">
+      <Value Profile="(Default)">RecycleBin</Value>
+    </Setting>
+    <Setting Name="IMAGEKEY_WIZADD" Type="System.String" Scope="User">
+      <Value Profile="(Default)">WizAdd</Value>
+    </Setting>
+    <Setting Name="MASTER_TREEVIEW_HEIGHT_DEFAULT" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">200</Value>
+    </Setting>
+    <Setting Name="MASTER_LISTITEMS_YEAR_WIDTH_DEFAULT" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">50</Value>
+    </Setting>
+    <Setting Name="USER_LASTDATASYNC" Type="System.Int64" Scope="User">
+      <Value Profile="(Default)">20100101000000</Value>
+    </Setting>
+    <Setting Name="USER_AUTHENTICATION" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="USER_REMEMBERME" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="DOCK_POSITION" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">2</Value>
+    </Setting>
+    <Setting Name="CUSTOMPANE_HEIGHT_DEFAULT" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">200</Value>
+    </Setting>
+    <Setting Name="DEFAULT_REMEMBERME" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="DEFAULT_MINLENGTH_INPUTSEARCH" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">3</Value>
+    </Setting>
+    <Setting Name="DEFAULT_LANGUAGE" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="LAST_LOGIN_EMAIL" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="DEFAULT_SORTBY" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">5</Value>
+    </Setting>
+    <Setting Name="MASTER_VERTICAL_SPLITTERPARENT_RATIO" Type="System.Double" Scope="User">
+      <Value Profile="(Default)">0.2</Value>
+    </Setting>
+    <Setting Name="MASTER_VERTICAL_SPLITTERCHILD_RATIO" Type="System.Double" Scope="User">
+      <Value Profile="(Default)">0.4</Value>
+    </Setting>
+    <Setting Name="MASTER_HORIZONTAL_SPLITTERPARENT_RATIO" Type="System.Double" Scope="User">
+      <Value Profile="(Default)">0.1</Value>
+    </Setting>
+    <Setting Name="MASTER_HORIZONTAL_SPLITTERCHILD_RATIO" Type="System.Double" Scope="User">
+      <Value Profile="(Default)">0.45</Value>
+    </Setting>
+    <Setting Name="MASTER_PREVIEW_COLLAPSED" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="DEFAULT_FILES_FOLDER" Type="System.String" Scope="User">
+      <Value Profile="(Default)">\πFolio\Files\</Value>
+    </Setting>
+    <Setting Name="DEFAULT_RESET" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="DEFAULT_FILTER_FIELDS" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">111</Value>
+    </Setting>
+    <Setting Name="DefaultLogFilePath" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="FORMAT_URL_STYLEEDITOR" Type="System.String" Scope="User">
+      <Value Profile="(Default)">{0}?style=1&amp;UserID={1}&amp;StyleName={2}</Value>
+    </Setting>
+    <Setting Name="DEFAULT_STYLECHOOSER_WIDTH" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">1000</Value>
+    </Setting>
+    <Setting Name="DEFAULT_STYLECHOOSER_HEIGHT" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">600</Value>
+    </Setting>
+    <Setting Name="FORMAT_URL_CITEDITEM" Type="System.String" Scope="User">
+      <Value Profile="(Default)">{0}?citation=1&amp;ver=3&amp;ItemID={1}&amp;UserID={2}&amp;AccessCode={3}&amp;CitationSuffix=</Value>
+    </Setting>
+    <Setting Name="FORMAT_URL_CITATIONSTYLE" Type="System.String" Scope="User">
+      <Value Profile="(Default)">{0}?style=1&amp;ver=3&amp;UserID={1}&amp;StyleName={2}</Value>
+    </Setting>
+    <Setting Name="URI_LOCALSHARESERVICE" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Handlers/WizFolioShare.ashx</Value>
+    </Setting>
+    <Setting Name="DEFAULT_CITATION_STYLE_NAME" Type="System.String" Scope="User">
+      <Value Profile="(Default)">APA (6th edition)</Value>
+    </Setting>
+    <Setting Name="DEFAULT_STYLEEDITOR_WIDTH" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">1024</Value>
+    </Setting>
+    <Setting Name="DEFAULT_STYLEEDITOR_HEIGHT" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">700</Value>
+    </Setting>
+    <Setting Name="LAST_USED_CITATIONSTYLES" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="LAST_USED_CITATIONSTYLES_NUMBER" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">5</Value>
+    </Setting>
+    <Setting Name="IMAGEKEY_COLLEAGUE" Type="System.String" Scope="User">
+      <Value Profile="(Default)">colleague</Value>
+    </Setting>
+    <Setting Name="IMAGEKEY_COLLEAGUELIST" Type="System.String" Scope="User">
+      <Value Profile="(Default)">colleaguelist</Value>
+    </Setting>
+    <Setting Name="IMAGEKEY_CITEDREFERENCES" Type="System.String" Scope="User">
+      <Value Profile="(Default)">CitedReferences</Value>
+    </Setting>
+    <Setting Name="DefaultLogFileName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">error.log</Value>
+    </Setting>
+    <Setting Name="URI_LOGINHANDLER" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Handlers/LoginHandler.ashx</Value>
+    </Setting>
+    <Setting Name="URI_ROOTDATAHANDLER" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Handlers/WizFolioData.ashx</Value>
+    </Setting>
+    <Setting Name="IMAGEKEY_LOADING" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Loading</Value>
+    </Setting>
+    <Setting Name="URI_LOGINSTYLEEDITOR" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Login.aspx?wizcitemode=1&amp;authstr={0}&amp;style=1&amp;userid={1}&amp;stylename={2}</Value>
+    </Setting>
+    <Setting Name="CUSTOMPANE_MINIMUM_WIDTH" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">350</Value>
+    </Setting>
+    <Setting Name="CUSTOMPANE_WIDTH_DEFAULT" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">390</Value>
+    </Setting>
+    <Setting Name="DEFAULT_PROGRESS_HEIGHT" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">104</Value>
+    </Setting>
+    <Setting Name="DEFAULT_PROGRESS_WIDTH" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">260</Value>
+    </Setting>
+    <Setting Name="MASTER_SPLITPARENT_PANEL1_H_MINHEIGHT" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">120</Value>
+    </Setting>
+    <Setting Name="MASTER_SPLITPARENT_PANEL2_H_MINHEIGHT" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">300</Value>
+    </Setting>
+    <Setting Name="MASTER_SPLITCHILD_PANEL1_H_MINHEIGHT" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">180</Value>
+    </Setting>
+    <Setting Name="MASTER_SPLITCHILD_PANEL2_H_MINHEIGHT" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">100</Value>
+    </Setting>
+    <Setting Name="MASTER_SPLITPARENT_PANEL1_V_MINWIDTH" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">180</Value>
+    </Setting>
+    <Setting Name="MASTER_SPLITPARENT_PANEL2_V_MINWIDTH" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">500</Value>
+    </Setting>
+    <Setting Name="MASTER_SPLITCHILD_PANEL1_V_MINWIDTH" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">220</Value>
+    </Setting>
+    <Setting Name="MASTER_SPLITCHILD_PANEL2_V_MINWIDTH" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">280</Value>
+    </Setting>
+    <Setting Name="URI_LOGINACCESS" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Login.aspx?wizcitemode=1&amp;authstr={0}&amp;referrer={1}</Value>
+    </Setting>
+    <Setting Name="DEFAULT_NUMOFCITATIONS_NOREFRESH" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">80</Value>
+    </Setting>
+    <Setting Name="DEFAULT_SCREENTIP_TITLE_WORDLIMIT" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">65</Value>
+    </Setting>
+    <Setting Name="DEFAULT_NUMOFITEMS_PER_LOAD" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">50</Value>
+    </Setting>
+    <Setting Name="URI_SUBSCRIPTION" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Payment/MySubscriptions.aspx</Value>
+    </Setting>
+    <Setting Name="CUSTOMPANE_TITLE" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Citation Tools {0}</Value>
+    </Setting>
+    <Setting Name="VERSION" Type="System.String" Scope="User">
+      <Value Profile="(Default)">1.1 beta</Value>
+    </Setting>
+    <Setting Name="DEFAULT_SHOWQUICKSTART" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="URL_QUICKSTART" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://help.pifolio.com/Contents/WizCite4_Tutorial.aspx?content=quickstart&amp;menu=0</Value>
+    </Setting>
+    <Setting Name="DEFAULT_QUICKSTART_WIDTH" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">1050</Value>
+    </Setting>
+    <Setting Name="DEFAULT_QUICKSTART_HEIGHT" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">650</Value>
+    </Setting>
+    <Setting Name="QUICKSTART_ALLOW_PERMANENTCLOSED" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="IMAGEKEY_PUBMEDNOTICAT" Type="System.String" Scope="User">
+      <Value Profile="(Default)">PubMedNotificationCat</Value>
+    </Setting>
+    <Setting Name="IMAGEKEY_PUBMEDNOTI" Type="System.String" Scope="User">
+      <Value Profile="(Default)">PubMedNotification</Value>
+    </Setting>
+    <Setting Name="IMAGEKEY_NOTITIME" Type="System.String" Scope="User">
+      <Value Profile="(Default)">NotificationTime</Value>
+    </Setting>
+    <Setting Name="IMAGEKEY_PUBMEDSEARCH" Type="System.String" Scope="User">
+      <Value Profile="(Default)">PubMedSearch</Value>
+    </Setting>
+    <Setting Name="IMAGEKEY_SCHOLARSPORTALSEARCH" Type="System.String" Scope="User">
+      <Value Profile="(Default)">ScholarsPortalSearch</Value>
+    </Setting>
+    <Setting Name="NUM_OF_SEARCH_RESULTS_PER_PAGE" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">20</Value>
+    </Setting>
+    <Setting Name="IMAGEKEY_SEARCHOPTIONS_FILTER" Type="System.String" Scope="User">
+      <Value Profile="(Default)">FilterImage</Value>
+    </Setting>
+    <Setting Name="IMAGEKEY_SEARCHOPTIONS_PUBMED" Type="System.String" Scope="User">
+      <Value Profile="(Default)">PubMedImage</Value>
+    </Setting>
+    <Setting Name="IMAGEKEY_SEARCHOPTIONS_SCHOLARSPORTAL" Type="System.String" Scope="User">
+      <Value Profile="(Default)">ScholarsPortalImage</Value>
+    </Setting>
+    <Setting Name="IMAGEKEY_SEARCHOPTIONS_CITEULIKE" Type="System.String" Scope="User">
+      <Value Profile="(Default)">CiteULikeImage</Value>
+    </Setting>
+    <Setting Name="IMAGEKEY_SEARCHOPTIONS_WORLDCAT" Type="System.String" Scope="User">
+      <Value Profile="(Default)">WorldCatImage</Value>
+    </Setting>
+    <Setting Name="IMAGEKEY_SEARCHOPTIONS_GOOGLESCHOLAR" Type="System.String" Scope="User">
+      <Value Profile="(Default)">GoogleScholarImage</Value>
+    </Setting>
+    <Setting Name="IMAGEKEY_SEARCHOPTIONS_WIZSEARCH" Type="System.String" Scope="User">
+      <Value Profile="(Default)">WizSearchImage</Value>
+    </Setting>
+    <Setting Name="IMAGEKEY_SEARCHOPTIONS_SEARCHDB" Type="System.String" Scope="User">
+      <Value Profile="(Default)">searchdbimage</Value>
+    </Setting>
+    <Setting Name="DEFAULT_IS_SORTDIRECTION_ASCENDING" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="URL_ROOTSERVER" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://root.pifolio.com/</Value>
+    </Setting>
+    <Setting Name="URL_TEMPLATE" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://provider.pifolio.com/file/citationtool/template/</Value>
+    </Setting>
+    <Setting Name="DEFAULT_TEMPLATE_FOLDER" Type="System.String" Scope="User">
+      <Value Profile="(Default)">\πFolio\Templates\</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

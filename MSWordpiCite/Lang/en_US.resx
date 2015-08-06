@@ -1,0 +1,501 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Login_Email_Label" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="Login_ForgotPassword_Link" xml:space="preserve">
+    <value>Forgot password?</value>
+  </data>
+  <data name="Login_Login_Button" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="Login_Password_Label" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="Login_Register_Link" xml:space="preserve">
+    <value>Create a new account</value>
+  </data>
+  <data name="Login_RememberMe_CheckBox" xml:space="preserve">
+    <value>Remember me</value>
+  </data>
+  <data name="Login_Title_Label" xml:space="preserve">
+    <value>Login to πFolio</value>
+  </data>
+  <data name="Master_BtnCite_Tooltip" xml:space="preserve">
+    <value>Insert citation(s)</value>
+  </data>
+  <data name="Master_BtnSortBy_Tooltip" xml:space="preserve">
+    <value>Sort and Find options</value>
+  </data>
+  <data name="Master_BtnHightlight_Tooltip" xml:space="preserve">
+    <value>Click to find selected reference\nClick again to jump to the next appearance of the reference.</value>
+  </data>
+  <data name="Master_BtnRefList_Tooltip" xml:space="preserve">
+    <value>List cited references in this document</value>
+  </data>
+  <data name="Master_BtnRefresh_Tooltip" xml:space="preserve">
+    <value>Refresh citations and reference list in this document</value>
+  </data>
+  <data name="Master_BtnStyle_Tooltip" xml:space="preserve">
+    <value>Change citation style</value>
+  </data>
+  <data name="Master_ClickOpen_Tooltip" xml:space="preserve">
+    <value>Click to open the file</value>
+  </data>
+  <data name="Master_FilterField_Abstract_Label" xml:space="preserve">
+    <value>Abstract</value>
+  </data>
+  <data name="Master_FilterField_Authors_Label" xml:space="preserve">
+    <value>Authors</value>
+  </data>
+  <data name="Master_FilterField_Keywords_Label" xml:space="preserve">
+    <value>Keywords</value>
+  </data>
+  <data name="Master_FilterField_Notes_Label" xml:space="preserve">
+    <value>Notes</value>
+  </data>
+  <data name="Master_FilterField_PubDate_Label" xml:space="preserve">
+    <value>Publication Year</value>
+  </data>
+  <data name="Master_FilterField_Tags_Label" xml:space="preserve">
+    <value>Tags</value>
+  </data>
+  <data name="Master_FilterField_Title2_Label" xml:space="preserve">
+    <value>Journal</value>
+  </data>
+  <data name="Master_FilterField_Title_Label" xml:space="preserve">
+    <value>Title</value>
+  </data>
+  <data name="Master_Filter_MenuItem" xml:space="preserve">
+    <value>Filter options</value>
+  </data>
+  <data name="Master_InputSearch_Text" xml:space="preserve">
+    <value>Filter items in this folder ...</value>
+  </data>
+  <data name="Master_Logout_Link" xml:space="preserve">
+    <value>Logout</value>
+  </data>
+  <data name="Master_MyCollections_Label" xml:space="preserve">
+    <value>My Library</value>
+  </data>
+  <data name="Master_NoItems_Label" xml:space="preserve">
+    <value>(No items found)</value>
+  </data>
+  <data name="Master_Reload_Link" xml:space="preserve">
+    <value>Reload all folders and items for the latest update</value>
+  </data>
+  <data name="Master_Search_Label" xml:space="preserve">
+    <value>Search for</value>
+  </data>
+  <data name="Master_SortBy_Author" xml:space="preserve">
+    <value>Authors</value>
+  </data>
+  <data name="Master_SortBy_ItemType" xml:space="preserve">
+    <value>Item Type</value>
+  </data>
+  <data name="Master_SortBy_Journal" xml:space="preserve">
+    <value>Journal Name</value>
+  </data>
+  <data name="Master_SortBy_Label" xml:space="preserve">
+    <value>Sort</value>
+  </data>
+  <data name="Master_SortBy_Title" xml:space="preserve">
+    <value>Title</value>
+  </data>
+  <data name="Master_SortBy_Year" xml:space="preserve">
+    <value>Publication Year</value>
+  </data>
+  <data name="Master_Sort_MenuItem" xml:space="preserve">
+    <value>Sort                </value>
+  </data>
+  <data name="Preview_NoItem_Label" xml:space="preserve">
+    <value>(No items selected)</value>
+  </data>
+  <data name="Status_Empty_Password" xml:space="preserve">
+    <value>* Please enter the password</value>
+  </data>
+  <data name="Status_Invalid_Email" xml:space="preserve">
+    <value>* You have entered an invalid email</value>
+  </data>
+  <data name="Status_Login_Failed" xml:space="preserve">
+    <value>* You have entered a wrong email address or password</value>
+  </data>
+  <data name="Status_Login_Success" xml:space="preserve">
+    <value>You have successfully logged in to WizFolio</value>
+  </data>
+  <data name="piCite_Ribbon_Button_ScreenTip" xml:space="preserve">
+    <value>Click to start CitationTool (ver {0})</value>
+  </data>
+  <data name="piCite_Ribbon_Button_SuperTip" xml:space="preserve">
+    <value>CitationTool (πFolio Citation Generator) inserts citations from your πFolio account directly into your documents and allows universal compatibility between different word processors.</value>
+  </data>
+  <data name="Master_BtnSearch_Tooltip" xml:space="preserve">
+    <value>Select database to perform search</value>
+  </data>
+  <data name="StyleChooser_BtnClose_Tooltip" xml:space="preserve">
+    <value>Close citation style chooser window</value>
+  </data>
+  <data name="StyleChooser_BtnReload_Tooltip" xml:space="preserve">
+    <value>Reload the list of citation styles</value>
+  </data>
+  <data name="StyleChooser_BtnShowAll_Tooltip" xml:space="preserve">
+    <value>Show all citation styles</value>
+  </data>
+  <data name="StyleChooser_EmptyList_Label" xml:space="preserve">
+    <value>(No citation styles found)</value>
+  </data>
+  <data name="StyleChooser_Title_Label" xml:space="preserve">
+    <value>Choose a citation style</value>
+  </data>
+  <data name="StyleChooser_BtnApply_Tooltip" xml:space="preserve">
+    <value>Apply this style</value>
+  </data>
+  <data name="StyleChooser_BtnEdit_Tooltip" xml:space="preserve">
+    <value>Edit this style</value>
+  </data>
+  <data name="StyleChooser_BtnShowAll_Hide_Tooltip" xml:space="preserve">
+    <value>Show only commonly used citation styles</value>
+  </data>
+  <data name="StyleChooser_InputSearch_Text" xml:space="preserve">
+    <value>Find citation style ...</value>
+  </data>
+  <data name="StyleChooser_OfficialStyleTitle_Label" xml:space="preserve">
+    <value>Commonly Used Citation Styles</value>
+  </data>
+  <data name="StyleChooser_UserStyleTitle_Label" xml:space="preserve">
+    <value>My Citation Styles</value>
+  </data>
+  <data name="StyleEditor_Title" xml:space="preserve">
+    <value>πFolio - Citation style editor</value>
+  </data>
+  <data name="StyleChooser_Preview_Html" xml:space="preserve">
+    <value>&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body style="font-family:Verdana;font-size:10px;"&gt;&lt;p&gt;Familial clustering {0} of a disease is a direct indicator of a possible heritable cause, provided that environmental sharing can be excluded. If the familial clustering is lacking {1}, the likelihood of a heritable influence {2} is also all.&lt;br/&gt;&lt;/p&gt;&lt;p&gt;{3}&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</value>
+  </data>
+  <data name="StyleChooser_FavoriteStyleTitle_Label" xml:space="preserve">
+    <value>Recently Used Styles</value>
+  </data>
+  <data name="StyleChooser_NoStyleSelected_Label" xml:space="preserve">
+    <value>Please select a citation style</value>
+  </data>
+  <data name="Master_ColleaguesList_Label" xml:space="preserve">
+    <value>My Colleagues</value>
+  </data>
+  <data name="Master_NodeColleague_Tooltip" xml:space="preserve">
+    <value>Double-click to load the colleague's sharing folders</value>
+  </data>
+  <data name="Master_CitedReferences_Label" xml:space="preserve">
+    <value>Cited References</value>
+  </data>
+  <data name="Master_CitedReferences_Tooltip" xml:space="preserve">
+    <value>List of the cited references in this document</value>
+  </data>
+  <data name="Master_ColleagueList_Tooltip" xml:space="preserve">
+    <value>Double-click to load the list of your colleagues</value>
+  </data>
+  <data name="Master_SortBy_None" xml:space="preserve">
+    <value>None</value>
+  </data>
+  <data name="Master_DownloadingBusy_Label" xml:space="preserve">
+    <value>The program is currently trying to download another file. Please try again later!</value>
+  </data>
+  <data name="Master_DownloadingBusy_Title" xml:space="preserve">
+    <value>Downloading in progress</value>
+  </data>
+  <data name="Master_DownloadingFile_Label" xml:space="preserve">
+    <value>Downloading ...</value>
+  </data>
+  <data name="Master_LoadingFolders_Label" xml:space="preserve">
+    <value>Loading folders ...</value>
+  </data>
+  <data name="Master_LoadingItems_Label" xml:space="preserve">
+    <value>Loading items ...</value>
+  </data>
+  <data name="Progress_RefreshCitation_Msg" xml:space="preserve">
+    <value>Please wait ...</value>
+  </data>
+  <data name="Progress_RefreshCitation_Title" xml:space="preserve">
+    <value>Refreshing citations</value>
+  </data>
+  <data name="Progress_ChangeCitationStyle_Msg" xml:space="preserve">
+    <value>Changing citation style to "{0}" ...</value>
+  </data>
+  <data name="Progress_ChangeCitationStyle_Title" xml:space="preserve">
+    <value>Changing citation style</value>
+  </data>
+  <data name="Alert_NoItemSelected_Msg" xml:space="preserve">
+    <value>No items selected</value>
+  </data>
+  <data name="Alert_NoMoreMatching_Msg" xml:space="preserve">
+    <value>No more matching references found</value>
+  </data>
+  <data name="Master_UserName_Tooltip" xml:space="preserve">
+    <value>Click to go to your πFolio web</value>
+  </data>
+  <data name="Login_LoggingIn_Label" xml:space="preserve">
+    <value>Logging into πFolio ...</value>
+  </data>
+  <data name="Master_NoAutoRefresh" xml:space="preserve">
+    <value>To avoid prolonged refreshing, auto-refresh is turned off by default when the number of citations reaches {0} items.\nManually refresh after you have completed your citations.</value>
+  </data>
+  <data name="Master_NoAutoRefresh_Title" xml:space="preserve">
+    <value>CitationTool Notification</value>
+  </data>
+  <data name="Progress_InsertCitation_Msg" xml:space="preserve">
+    <value>Please wait ...</value>
+  </data>
+  <data name="Progress_InsertCitation_Title" xml:space="preserve">
+    <value>Inserting citations</value>
+  </data>
+  <data name="StyleChooser_OfficialStyleAllTitle_Label" xml:space="preserve">
+    <value>All citation styles supported by πFolio</value>
+  </data>
+  <data name="Master_BtnPreview_Tooltip" xml:space="preserve">
+    <value>Show/Hide preview</value>
+  </data>
+  <data name="Master_LoadingItemsProgress_Label" xml:space="preserve">
+    <value>Loading items ... ( {0} )</value>
+  </data>
+  <data name="Master_HidePreview_MenuItem" xml:space="preserve">
+    <value>Hide item preview</value>
+  </data>
+  <data name="Master_ShowPreview_MenuItem" xml:space="preserve">
+    <value>Show item preview</value>
+  </data>
+  <data name="StyleChooser_BtnShowAll_WarningFreeUser" xml:space="preserve">
+    <value>To access the full list of over 1000 citation styles, please upgrade to a Premium account or an Institutional account.\nDo you wish to upgrade your account?</value>
+  </data>
+  <data name="StyleChooser_BtnShowAll_WarningFreeUser_Title" xml:space="preserve">
+    <value>Upgrade your πFolio account</value>
+  </data>
+  <data name="Login_NoInternet_Msg" xml:space="preserve">
+    <value>Citation Tool is unable to access the internet. Please check your network connection.</value>
+  </data>
+  <data name="Login_NoInternet_Title" xml:space="preserve">
+    <value>No internet connection detected</value>
+  </data>
+  <data name="piCite_Ribbon_Button_Label" xml:space="preserve">
+    <value>CitationTool {0}</value>
+  </data>
+  <data name="StyleChooser_LoadingPreview_Label" xml:space="preserve">
+    <value>    Loading citation style preview ...</value>
+  </data>
+  <data name="Master_ClickOpenLink_Tooltip" xml:space="preserve">
+    <value>Click to open the link</value>
+  </data>
+  <data name="QuickStart_ShowNextTime_Msg" xml:space="preserve">
+    <value>Do not show this Quick Start window again ?</value>
+  </data>
+  <data name="QuickStart_ShowNextTime_Title" xml:space="preserve">
+    <value>πFolio - Quick Start</value>
+  </data>
+  <data name="QuickStart_Title" xml:space="preserve">
+    <value>πFolio - CitationTool {0} Quick Start</value>
+  </data>
+  <data name="Master_BtnPubMed_Tooltip" xml:space="preserve">
+    <value>Click to search in PubMed database</value>
+  </data>
+  <data name="Master_BtnScholarsPortal_Tooltip" xml:space="preserve">
+    <value>Click to search in ScholarsPortal database</value>
+  </data>
+  <data name="Master_InputPubMedSearch_Text" xml:space="preserve">
+    <value>Search in PubMed database ...</value>
+  </data>
+  <data name="Master_InputScholarsPortalSearch_Text" xml:space="preserve">
+    <value>Search in ScholarsPortal database ...</value>
+  </data>
+  <data name="Master_PubMedMore_Tooltip" xml:space="preserve">
+    <value>Click to load more results from PubMed</value>
+  </data>
+  <data name="Master_PubMedSearch_Label" xml:space="preserve">
+    <value>Search in PubMed</value>
+  </data>
+  <data name="Master_PubMedSearch_Tooltip" xml:space="preserve">
+    <value>Click to start searching in PubMed database</value>
+  </data>
+  <data name="Master_ScholarsPortalMore_Tooltip" xml:space="preserve">
+    <value>Click to load more results from ScholarsPortal</value>
+  </data>
+  <data name="Master_ScholarsPortalSearch_Label" xml:space="preserve">
+    <value>Search in ScholarsPortal</value>
+  </data>
+  <data name="Master_ScholarsPortalSearch_Tooltip" xml:space="preserve">
+    <value>Click to start searching in ScholarsPortal database</value>
+  </data>
+  <data name="Master_SearchOptions_CiteULike" xml:space="preserve">
+    <value>Search in CiteULike</value>
+  </data>
+  <data name="Master_SearchOptions_Filter" xml:space="preserve">
+    <value>Filter items in this folder</value>
+  </data>
+  <data name="Master_SearchOptions_GoogleScholar" xml:space="preserve">
+    <value>Search in Google Scholar</value>
+  </data>
+  <data name="Master_SearchOptions_PubMed" xml:space="preserve">
+    <value>Search in PubMed</value>
+  </data>
+  <data name="Master_SearchOptions_ScholarsPortal" xml:space="preserve">
+    <value>Search in Scholars Portal</value>
+  </data>
+  <data name="Master_SearchOptions_WizSearch" xml:space="preserve">
+    <value>Search in πFolio Collections</value>
+  </data>
+  <data name="Master_SearchOptions_WorldCat" xml:space="preserve">
+    <value>Search in WorldCat</value>
+  </data>
+  <data name="Master_BtnMore_Tooltip" xml:space="preserve">
+    <value>Click to load more results ...</value>
+  </data>
+  <data name="Master_ClickEnterToSearch_Label" xml:space="preserve">
+    <value>( Type in the query and press Enter to search )</value>
+  </data>
+  <data name="Master_InputSearch_CiteULike_Label" xml:space="preserve">
+    <value>Search in Cite U Like ...</value>
+  </data>
+  <data name="Master_InputSearch_Filter_Label" xml:space="preserve">
+    <value>Filter items in this folder ...</value>
+  </data>
+  <data name="Master_InputSearch_GoogleScholar_Label" xml:space="preserve">
+    <value>Search in Google Search ...</value>
+  </data>
+  <data name="Master_InputSearch_PubMed_Label" xml:space="preserve">
+    <value>Search in PubMed ...</value>
+  </data>
+  <data name="Master_InputSearch_ScholarsPortal_Label" xml:space="preserve">
+    <value>Search in Scholars Portal ...</value>
+  </data>
+  <data name="Master_InputSearch_WizSearch_Label" xml:space="preserve">
+    <value>Search in πFolio Collections ...</value>
+  </data>
+  <data name="Master_InputSearch_WorldCat_Label" xml:space="preserve">
+    <value>Search in Word Cat ...</value>
+  </data>
+  <data name="Master_SearchOptions_SearchDatabases" xml:space="preserve">
+    <value>Search in databases</value>
+  </data>
+  <data name="SortAscending_Label" xml:space="preserve">
+    <value>Sort ascending</value>
+  </data>
+  <data name="SortDescending_Label" xml:space="preserve">
+    <value>Sort descending</value>
+  </data>
+  <data name="Master_BtnTemplate_Tooltip" xml:space="preserve">
+    <value>Select Template</value>
+  </data>
+</root>

@@ -1,0 +1,7 @@
+Sub WizCite_FindReference()
+	Dim oAddin As COMAddIn
+	Dim oCOMFuncs As Object
+	Set oAddin = Application.COMAddIns("WizCite for Microsoft Word")
+	Set oCOMFuncs = oAddin.Object
+	oCOMFuncs.FindReference
+End Sub

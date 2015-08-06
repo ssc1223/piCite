@@ -1,0 +1,753 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--
+    This section defines project-level properties.
+
+    AssemblyName
+      Name of the output assembly.
+    Configuration
+      Specifies a default value for debug.
+    OutputType
+      Must be "Library" for VSTO.
+    Platform
+      Specifies what CPU the output of this project can run on.
+    NoStandardLibraries
+      Set to "false" for VSTO.
+    RootNamespace
+      In C#, this specifies the namespace given to new files. In VB, all objects are
+      wrapped in this namespace at runtime.
+  -->
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <ProjectTypeGuids>{BAA0C2D2-18E2-41B9-852F-F413020CAA33};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F6157D8F-441B-4B14-A21A-CADB880C577C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <NoStandardLibraries>false</NoStandardLibraries>
+    <RootNamespace>MSWordpiCite</RootNamespace>
+    <AssemblyName>CitationTool for Microsoft Word</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <ManifestCertificateThumbprint>734F1EB85F550B31DF8F07674D2104DC479B9064</ManifestCertificateThumbprint>
+    <ManifestKeyFile>
+    </ManifestKeyFile>
+    <SignManifests>true</SignManifests>
+    <IsWebBootstrapper>False</IsWebBootstrapper>
+    <SignAssembly>false</SignAssembly>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <VSTO_TrustAssembliesLocation>true</VSTO_TrustAssembliesLocation>
+    <TargetFrameworkProfile />
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <BootstrapperComponentsUrl>http://beta-help.wizfolio.com/Files/WizCite</BootstrapperComponentsUrl>
+    <PublishUrl>C:\Pi-Cite for iGroup\Publish\v.1.1\</PublishUrl>
+    <InstallUrl />
+    <TargetCulture>en</TargetCulture>
+    <ApplicationVersion>1.1.0.2</ApplicationVersion>
+    <AutoIncrementApplicationRevision>true</AutoIncrementApplicationRevision>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>days</UpdateIntervalUnits>
+    <ProductName>CitationTool for Microsoft Word v1.1 beta</ProductName>
+    <PublisherName>iGroup</PublisherName>
+    <SupportUrl>http://pifolio.com</SupportUrl>
+    <FriendlyName>CitationTool for Microsoft Word v1.1 beta</FriendlyName>
+    <OfficeApplicationDescription />
+    <LoadBehavior>3</LoadBehavior>
+  </PropertyGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.VSTORuntime.4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft Visual Studio 2010 Tools for Office Runtime %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <PropertyGroup>
+    <!--
+      OfficeApplication
+        Add-in host application
+    -->
+    <OfficeApplication>Word</OfficeApplication>
+  </PropertyGroup>
+  <!--
+    This section defines properties that are set when the "Debug" configuration is selected.
+
+    DebugSymbols
+      If "true", create symbols (.pdb). If "false", do not create symbols.
+    DefineConstants
+      Constants defined for the preprocessor.
+    EnableUnmanagedDebugging
+      If "true", starting the debugger will attach both managed and unmanaged debuggers.
+    Optimize
+      If "true", optimize the build output. If "false", do not optimize.
+    OutputPath
+      Output path of project relative to the project file.
+    WarningLevel
+      Warning level for the compiler.
+  -->
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <!--
+    This section defines properties that are set when the "Release" configuration is selected.
+
+    DebugSymbols
+      If "true", create symbols (.pdb). If "false", do not create symbols.
+    DefineConstants
+      Constants defined for the preprocessor.
+    EnableUnmanagedDebugging
+      If "true", starting the debugger will attach both managed and unmanaged debuggers.
+    Optimize
+      If "true", optimize the build output. If "false", do not optimize.
+    OutputPath
+      Output path of project relative to the project file.
+    WarningLevel
+      Warning level for the compiler.
+  -->
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+    <DefineConstants>TRACE</DefineConstants>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <!--
+    This section enables pre- and post-build steps. However, in VSTO use
+    MSBuild tasks instead of these properties.       
+  -->
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <!--
+    This section specifies references for the project.
+  -->
+  <ItemGroup>
+    <Reference Include="Accessibility" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Office.Client.Education, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Office.Interop.Word, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Office.Tools, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Office.Tools.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Office.Tools.Common.v4.0.Utilities, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Office.Tools.v4.0.Framework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Office.Tools.Word, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Office.Tools.Word.v4.0.Utilities, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Vbe.Interop, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.Tools.Applications.Runtime, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL" />
+    <Reference Include="Office, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="stdole, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Controls.Ribbon" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="PresentationCore">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="PresentationFramework">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Services" />
+    <Reference Include="UIAutomationProvider">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <!--
+    This section defines the user source files that are part of the project.
+     
+    A "Compile" element specifies a source file to compile.
+    An "EmbeddedResource" element specifies an .resx file for embedded resources.
+    A "None" element specifies a file that is not to be passed to the compiler (for instance, 
+    a text file or XML file).
+    The "AppDesigner" element specifies the directory where the application properties files
+    can be found.
+  -->
+  <ItemGroup>
+    <Compile Include="CitationGenerator\CitationFormatter.cs" />
+    <Compile Include="CitationGenerator\CitationStyle.cs" />
+    <Compile Include="CitationGenerator\Fields.cs" />
+    <Compile Include="CitationGenerator\InTextCitation.cs" />
+    <Compile Include="CitationGenerator\ListReferences.cs" />
+    <Compile Include="CitationGenerator\ReferenceCitationItem.cs" />
+    <Compile Include="CitationGenerator\TextCitationItem.cs" />
+    <Compile Include="Classes\CustomButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Classes\CustomComboBoxControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Classes\CustomHttpRequest.cs" />
+    <Compile Include="Classes\Decoration.cs" />
+    <Compile Include="Classes\Enum.cs" />
+    <Compile Include="Classes\StyleInformation.cs" />
+    <Compile Include="Classes\User.cs" />
+    <Compile Include="Classes\WordHyperLink.cs" />
+    <Compile Include="Forms\iThenticateForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\iThenticateForm.Designer.cs">
+      <DependentUpon>iThenticateForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ThirdPartyLoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ThirdPartyLoginForm.Designer.cs">
+      <DependentUpon>ThirdPartyLoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SelectionDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SelectionDialog.Designer.cs">
+      <DependentUpon>SelectionDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\TemplateForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\TemplateForm.Designer.cs">
+      <DependentUpon>TemplateForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ProgressForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ProgressForm.Designer.cs">
+      <DependentUpon>ProgressForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\QuickStart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\QuickStart.Designer.cs">
+      <DependentUpon>QuickStart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\WebBrowserHelper.cs" />
+    <Compile Include="Search\BaseClass.cs" />
+    <Compile Include="Search\CiteULike.cs" />
+    <Compile Include="Search\GoogleScholar.cs" />
+    <Compile Include="Search\PubMed.cs" />
+    <Compile Include="Search\ScholarsPortal.cs" />
+    <Compile Include="Search\WizFolioSearch.cs" />
+    <Compile Include="Search\WorldCat.cs" />
+    <Compile Include="Threads\LoginThread.cs" />
+    <Compile Include="Threads\MasterControlThread.cs" />
+    <Compile Include="Threads\StyleControlThread.cs" />
+    <Compile Include="piFolioUtils_Lite\Entities\Colleague.cs" />
+    <Compile Include="piFolioUtils_Lite\Entities\Folder.cs" />
+    <Compile Include="piFolioUtils_Lite\Entities\ItemMasterRow.cs" />
+    <Compile Include="piFolioUtils_Lite\Entities\NameMasterRow.cs" />
+    <Compile Include="piFolioUtils_Lite\Enums\Common.cs" />
+    <Compile Include="Formatter\DocumentEditor.cs" />
+    <Compile Include="Forms\CitationStyleEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CitationStyleEditorForm.Designer.cs">
+      <DependentUpon>CitationStyleEditorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CitationStyleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CitationStyleForm.Designer.cs">
+      <DependentUpon>CitationStyleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CitationStylePreviewControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\CitationStylePreviewControl.Designer.cs">
+      <DependentUpon>CitationStylePreviewControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\PreviewControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\PreviewControl.Designer.cs">
+      <DependentUpon>PreviewControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\LoginControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\LoginControl.Designer.cs">
+      <DependentUpon>LoginControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\MasterControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\MasterControl.Designer.cs">
+      <DependentUpon>MasterControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formatter\DocumentFormatter.cs" />
+    <Compile Include="Lang\en_US.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>en_US.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <EmbeddedResource Include="Forms\iThenticateForm.resx">
+      <DependentUpon>iThenticateForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ThirdPartyLoginForm.resx">
+      <DependentUpon>ThirdPartyLoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CitationStyleEditorForm.resx">
+      <DependentUpon>CitationStyleEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CitationStyleForm.resx">
+      <DependentUpon>CitationStyleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\CitationStylePreviewControl.resx">
+      <DependentUpon>CitationStylePreviewControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PreviewControl.resx">
+      <DependentUpon>PreviewControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\LoginControl.resx">
+      <DependentUpon>LoginControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\MasterControl.resx">
+      <DependentUpon>MasterControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SelectionDialog.resx">
+      <DependentUpon>SelectionDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TemplateForm.resx">
+      <DependentUpon>TemplateForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ProgressForm.resx">
+      <DependentUpon>ProgressForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\QuickStart.resx">
+      <DependentUpon>QuickStart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lang\en_US.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>en_US.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RibbonButtons\ribpiCiteTab.resx">
+      <DependentUpon>ribpiCiteTab.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MSWordWizCite_TemporaryKey.pfx" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="RibbonButtons\ribpiCiteTab.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RibbonButtons\ribpiCiteTab.Designer.cs">
+      <DependentUpon>ribpiCiteTab.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThisAddIn.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <None Include="ThisAddIn.Designer.xml">
+      <DependentUpon>ThisAddIn.cs</DependentUpon>
+    </None>
+    <Compile Include="ThisAddIn.Designer.cs">
+      <DependentUpon>ThisAddIn.Designer.xml</DependentUpon>
+    </Compile>
+    <Compile Include="Tools\CitationTools.cs" />
+    <Compile Include="piFolioUtils_Lite\Logger.cs" />
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wizaddicon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\DataSources\System.Data.DataTable.datasource" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mypublicationsfolder.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DefaultFolder.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CollectionsParent.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WizFolder.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FolderTrash.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Import24x24.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\booktype.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chaptertype.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\documenttype.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\journaltype.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\patenttype.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\proceedingtype.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thesistype.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\webpagetype.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kservices.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Service Manager.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ReferenceLocate.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CitationInsert.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CitationStyleChange.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FolderRefresh2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Highlight.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cross_small.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PDF16x16.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_sort_order.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sort_order.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Audio16x16.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\excel16x16.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HTM16x16.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\powerpoint16x16.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\text16x16.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\word16x16.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UnknownFile16x16.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SharedFolder1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\publicicon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CitationStyleEdit.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SaveOfficial.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SampleItems.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\favorites.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SharedCollection.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loading.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\midi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pdf.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\spreadsheet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\video.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\html.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\transfer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CitationStyleChange.png" />
+    <None Include="Resources\WizCite.dot" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DisplayIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wizcite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WizCiteIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\premiumbtn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\link_icon.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PubMedNotiChild.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\newpubmed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PubMedNoti.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PubMedNotiDay.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PubMed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ScholarsPortal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xmag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\more-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CiteUlike.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Filter.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GoogleBooks.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PubMed.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wizsearch.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\worldcat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DropUpArrow.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ArrowUp.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sort_asc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sort_des.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ic_launch_black_18dp.png" />
+    <Content Include="MSWordpiCite.csproj.user" />
+    <Content Include="nodrop.cur" />
+    <Content Include="Resources\facebook.png" />
+    <None Include="Resources\facebook1.png" />
+    <Content Include="Resources\google.png" />
+    <None Include="Resources\google1.png" />
+    <None Include="Resources\pifolioicon.png" />
+    <None Include="Resources\holder.png" />
+    <None Include="Resources\blackmask.bmp" />
+    <None Include="Resources\ic_launch_black_18dp.png" />
+    <None Include="Resources\afolioicon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="MSHTML">
+      <Guid>{3050F1C5-98B5-11CF-BB82-00AA00BDCE0B}</Guid>
+      <VersionMajor>4</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\ObjectListView\ObjectListView2012.csproj">
+      <Project>{18feda0c-d147-4286-b39a-01204808106a}</Project>
+      <Name>ObjectListView2012</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <!-- Include the build rules for a C# project. -->
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <DelaySign>false</DelaySign>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestTimestampUrl>http://tsa.starfieldtech.com</ManifestTimestampUrl>
+  </PropertyGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- Include additional build rules for an Office application add-in. -->
+  <!-- This section defines VSTO properties that describe the host-changeable project properties. -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{BAA0C2D2-18E2-41B9-852F-F413020CAA33}">
+        <ProjectProperties HostName="Word" HostPackage="{29A7B9D7-A7F1-4328-8EF0-6B2D1A56B2C1}" OfficeVersion="15.0" VstxVersion="4.0" ApplicationType="Word" Language="cs" TemplatesPath="VSTOTemplates" DebugInfoExeName="#Software\Microsoft\Office\15.0\Word\InstallRoot\Path#WINWORD.EXE" DebugInfoCommandLine="/w" AddItemTemplatesGuid="{51063C3A-E220-4D12-8922-BDA915ACD783}" />
+        <Host Name="Word" GeneratedCodeNamespace="MSWordpiCite" PublishedHash="69C324AB27932AA2FBF2B7EA72250886FF164DE6" IconIndex="0">
+          <HostItem Name="ThisAddIn" Code="ThisAddIn.cs" CanonicalName="AddIn" PublishedHash="578C838230B2B0875FA46A05D284E7FE4490A5A4" CanActivate="false" IconIndex="1" Blueprint="ThisAddIn.Designer.xml" GeneratedCode="ThisAddIn.Designer.cs" />
+        </Host>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Import Project="$(VSToolsPath)\OfficeTools\Microsoft.VisualStudio.Tools.Office.targets" Condition="'$(VSToolsPath)' != ''" />
+</Project>

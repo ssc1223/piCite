@@ -1,0 +1,7 @@
+Sub WizCite_ReferenceList()
+	Dim oAddin As COMAddIn
+	Dim oCOMFuncs As Object
+	Set oAddin = Application.COMAddIns("WizCite for Microsoft Word")
+	Set oCOMFuncs = oAddin.Object
+	oCOMFuncs.ReferenceList
+End Sub
